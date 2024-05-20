@@ -1,5 +1,5 @@
-import { spotify } from "@/colors";
 import type { Config } from "tailwindcss";
+const spotify = require("./colors")
 
 const config = {
   darkMode: ["class"],
