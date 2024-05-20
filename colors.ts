@@ -3,7 +3,7 @@ const spotify = {
   black: "#212121",
   dark: "#121212",
   gray: "#181818",
-  lightGray: "#b3b3b3",
+  "light-gray": "#343434",
   "text-subdued": "#a7a7a7",
 };
 

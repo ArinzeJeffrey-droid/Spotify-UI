@@ -1,6 +1,8 @@
 import React from "react";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import Image from "next/image";
+import { Play as PlayIcon } from "react-feather";
+import Button from "./Button";
 
 type Props = {
   title: string;
@@ -20,9 +22,12 @@ const PlayListCard = ({ title, subtitle, imgSrc }: Props) => {
             height={200}
             className="w-full h-64 object-cover rounded-lg"
           />
-          <button className="absolute bottom-2 hidden right-2 bg-spotify-green text-black p-2 rounded-full group-hover:block">
-            Play
-          </button>
+          <Button
+            variant="play"
+            className="absolute bottom-2 hidden right-2 group-hover:block"
+          >
+            <PlayIcon fill="black" />
+          </Button>
         </div>
       </CardContent>
       <CardFooter className="flex-col px-3 text-white">
