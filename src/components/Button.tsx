@@ -22,7 +22,7 @@ const BUTTON_CLASSES = {
   base: "inline-flex justify-center items-center",
   badge:
     "bg-spotify-light-gray hover:opacity-75 text-white active:bg-white active:text-black rounded-2xl px-3 py-1",
-  play: "bg-spotify-green text-black p-2 rounded-full shadow-2xl",
+  play: "bg-spotify-green text-black p-3 rounded-full shadow-2xl",
 };
 function Button({ variant = "base", ...props }: Props): React.ReactElement {
   const className = clsx(
