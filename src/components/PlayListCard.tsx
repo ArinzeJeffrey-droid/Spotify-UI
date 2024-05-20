@@ -27,8 +27,8 @@ const PlayListCard = ({ title, subtitle, imgSrc }: Props) => {
       </CardContent>
       <CardFooter className="flex-col px-3 text-white">
         <div>
-          <p className="font-semibold mb-2">{title}</p>
-          <p>{subtitle}</p>
+          <p className="font-semibold">{title}</p>
+          <p className="text-spotify-text-subdued">{subtitle}</p>
         </div>
       </CardFooter>
     </Card>
