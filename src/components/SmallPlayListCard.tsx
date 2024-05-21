@@ -2,16 +2,22 @@ import React from "react";
 import Image from "next/image";
 import Button from "./Button";
 import { Play as PlayIcon } from "react-feather";
+import clsx from "clsx";
 
 type Props = {
   title: string;
   subtitle?: string;
   imgSrc: string;
+  removeHover?: boolean;
 };
 
-const SmallPlayListCard = ({ title, subtitle, imgSrc }: Props) => {
+const SmallPlayListCard = ({ title, subtitle, imgSrc, removeHover }: Props) => {
+  const classes = clsx(
+    "group flex p-2 rounded-md",
+    !removeHover && "hover:bg-spotify-gray"
+  );
   return (
-    <div className="group flex p-2 rounded-md hover:bg-spotify-gray">
+    <div className={classes}>
       <div className="w-28 h-24">
         <Image
           src={imgSrc}
@@ -30,7 +36,7 @@ const SmallPlayListCard = ({ title, subtitle, imgSrc }: Props) => {
         </div>
         {!subtitle && (
           <Button variant="green" className="invisible group-hover:visible">
-            <PlayIcon fill="black" />
+            <PlayIcon className="text-black" />
           </Button>
         )}
       </div>

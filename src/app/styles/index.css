@@ -1,4 +1,5 @@
-.main {
+.page-wrapper {
   grid-template-columns: 0.5fr 2fr 0.5fr;
-  @apply grid h-screen;
+  height: calc(100vh - 80px);
+  @apply grid flex-grow overflow-y-auto;
 }
