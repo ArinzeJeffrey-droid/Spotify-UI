@@ -1,10 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Button from "./Button";
-import { Play as PlayIcon } from "react-feather";
+import SmallPlayListCard from "./SmallPlayListCard";
 
 const meta = {
-  title: "Components/Button",
-  component: Button,
+  title: "Components/SmallPlayListCard",
+  component: SmallPlayListCard,
   parameters: {
     layout: "centered",
     backgrounds: {
@@ -13,21 +12,22 @@ const meta = {
     },
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof SmallPlayListCard>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Base: Story = {
   args: {
-    children: "All",
-    variant: "badge",
+    title: "Liked songs",
+    subtitle: " Album . John Legend",
+    imgSrc: "/img/chocolate.jpg",
   },
 };
 
-export const Green: Story = {
+export const WithoutSubtitle: Story = {
   args: {
-    children: <PlayIcon fill="black" />,
-    variant: "green",
+    title: "Favorite",
+    imgSrc: "/img/chocolate.jpg",
   },
 };
