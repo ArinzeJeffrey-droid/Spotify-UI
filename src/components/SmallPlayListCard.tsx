@@ -30,7 +30,7 @@ const SmallPlayListCard = ({ title, subtitle, imgSrc }: Props) => {
         </div>
         {!subtitle && (
           <Button variant="green" className="invisible group-hover:visible">
-            <PlayIcon fill="black" />
+            <PlayIcon className="text-black" />
           </Button>
         )}
       </div>

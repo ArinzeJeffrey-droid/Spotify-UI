@@ -26,7 +26,7 @@ const PlayListCard = ({ title, subtitle, imgSrc }: Props) => {
             variant="green"
             className="absolute bottom-2 hidden right-2 group-hover:block"
           >
-            <PlayIcon fill="black" />
+            <PlayIcon className="text-black" />
           </Button>
         </div>
       </CardContent>
