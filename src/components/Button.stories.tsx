@@ -25,9 +25,9 @@ export const Base: Story = {
   },
 };
 
-export const Play: Story = {
+export const Green: Story = {
   args: {
     children: <PlayIcon fill="black" />,
-    variant: "play",
+    variant: "green",
   },
 };
