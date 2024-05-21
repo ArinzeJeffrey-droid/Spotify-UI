@@ -17,13 +17,13 @@ const Playback = ({ className }: Props) => {
           title="Lovesong"
           subtitle="Adele"
           imgSrc="/img/chocolate.jpg"
+          removeHover
         />
       </div>
       <div className="w-[40%]">
         <PlaybackControls />
         <PlaybackProgressBar />
       </div>
-
       <MediaControls />
     </div>
   );

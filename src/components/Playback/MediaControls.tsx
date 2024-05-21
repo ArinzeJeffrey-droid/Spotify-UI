@@ -12,7 +12,7 @@ import ProgressBar from "../ProgressBar";
 
 const MediaControls = () => {
   return (
-    <div className="flex justify-end gap-4 items-center w-[40%]">
+    <div className="flex justify-end gap-4 pr-3 items-center w-[40%]">
       <PlayCircle stroke="#BCBABB" />
       <Mic stroke="#BCBABB" />
       <Speaker stroke="#BCBABB" />
