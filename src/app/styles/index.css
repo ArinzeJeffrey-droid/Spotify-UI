@@ -1,5 +1,9 @@
 .page-wrapper {
   grid-template-columns: 0.5fr 2fr 0.5fr;
   height: calc(100vh - 80px);
-  @apply grid flex-grow overflow-y-auto;
+  @apply grid gap-2 flex-grow overflow-y-auto;
+}
+
+.column-height {
+  height: calc(100% - 100px);
 }
