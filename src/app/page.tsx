@@ -1,18 +1,17 @@
 import { Card } from "@/components/ui/card";
 import "./styles/index.css";
 import Playback from "@/components/Playback/Playback";
+import Sidebar from "@/components/Sidebar";
 
 export default function Home() {
   return (
-    <main className="h-screen flex flex-col">
+    <main className="flex flex-col px-2">
       <div className="page-wrapper">
-        <section className="py-2 px-1">
+        <Sidebar />
+        <section className="pt-2">
           <Card className="h-10 bg-spotify-dark border-none"></Card>
         </section>
-        <section className="py-2 px-1">
-          <Card className="h-10 bg-spotify-dark border-none"></Card>
-        </section>
-        <section className="py-2 px-1">
+        <section className="pt-2">
           <Card className="h-10 bg-spotify-dark border-none"></Card>
         </section>
       </div>

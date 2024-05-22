@@ -11,12 +11,12 @@ type Props = {
 
 const Playback = ({ className }: Props) => {
   return (
-    <div className={clsx("flex justify-between items-center", className)}>
+    <div className={clsx("flex justify-between py-2 bg-black items-center", className)}>
       <div className="w-[30%]">
         <SmallPlayListCard
           title="Lovesong"
           subtitle="Adele"
-          imgSrc="/img/chocolate.jpg"
+          imgSrc="/img/pasta.jpg"
           removeHover
         />
       </div>

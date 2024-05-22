@@ -18,7 +18,7 @@ const SmallPlayListCard = ({ title, subtitle, imgSrc, removeHover }: Props) => {
   );
   return (
     <div className={classes}>
-      <div className="w-28 h-24">
+      <div className="w-28 h-15">
         <Image
           src={imgSrc}
           alt={"jd"}

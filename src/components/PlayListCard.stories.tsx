@@ -21,6 +21,6 @@ export const Base: Story = {
   args: {
     title: "80s Pop Rock",
     subtitle: "The essential pop rock songs from the 80s...",
-    imgSrc: "/img/chocolate.jpg",
+    imgSrc: "/img/pasta.jpg",
   },
 };

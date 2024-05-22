@@ -21,13 +21,13 @@ export const Base: Story = {
   args: {
     title: "Liked songs",
     subtitle: " Album . John Legend",
-    imgSrc: "/img/chocolate.jpg",
+    imgSrc: "/img/alfredo.jpg",
   },
 };
 
 export const WithoutSubtitle: Story = {
   args: {
     title: "Favorite",
-    imgSrc: "/img/chocolate.jpg",
+    imgSrc: "/img/veggie.jpg",
   },
 };
