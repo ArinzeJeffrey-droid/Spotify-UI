@@ -10,7 +10,7 @@ Make sure you have Node.js and npm installed on your machine.
 ### Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/spotify-ui-clone.git
+    git clone https://github.com/ArinzeJeffrey-droid/Spotify-UI.git
     cd spotify-ui-clone
     ```
 2. Install the dependencies:
@@ -33,6 +33,6 @@ Storybook is used for developing and showcasing UI components. To view the compo
     ```bash
     npm run storybook
     ```
-2. You will be automatically redirected to [http://localhost:6000](http://localhost:6000) to view the documentation.
+2. You will be automatically redirected to [http://localhost:6006](http://localhost:6006) to view the documentation.
 
 ![storybook](./image.png)
