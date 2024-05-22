@@ -23,6 +23,8 @@ const BUTTON_CLASSES = {
   badge:
     "bg-spotify-lightest-gray text-sm hover:opacity-75 text-white active:bg-white active:text-black rounded-2xl px-3 py-1",
   green: "bg-spotify-green text-black p-3 rounded-full shadow-2xl",
+  icon:
+  "bg-spotify-lightest-gray text-sm hover:opacity-75 text-white active:bg-white active:text-black rounded-full p-2",
 };
 function Button({ variant = "base", ...props }: Props): React.ReactElement {
   const className = clsx(

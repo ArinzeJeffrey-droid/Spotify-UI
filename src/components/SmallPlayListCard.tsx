@@ -21,22 +21,24 @@ const SmallPlayListCard = ({ title, subtitle, imgSrc, removeHover }: Props) => {
       <div className="w-28 h-15">
         <Image
           src={imgSrc}
-          alt={"jd"}
-          width={100}
-          height={100}
+          alt={title}
+          width={112}
+          height={112}
           className="rounded-md w-full h-full"
         />
       </div>
       <div className="px-4 w-full flex justify-between items-center">
         <div>
-          <p className="text-white">{title}</p>
+          <p className={clsx("text-white break-words", !subtitle && "text-sm")}>
+            {title}
+          </p>
           {subtitle && (
             <p className="text-spotify-text-subdued text-sm">{subtitle}</p>
           )}
         </div>
         {!subtitle && (
           <Button variant="green" className="invisible group-hover:visible">
-            <PlayIcon className="text-black" />
+            <PlayIcon fill="black" />
           </Button>
         )}
       </div>
