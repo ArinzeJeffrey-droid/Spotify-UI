@@ -27,7 +27,7 @@ const links = [
 
 const Sidebar = () => {
   return (
-    <section className="pt-2">
+    <section className="pt-2 pl-2 h-full">
       <Card className="border-none bg-spotify-dark p-4">
         <ul className="mt-3">
           {links.map((link, index) => (
@@ -43,8 +43,8 @@ const Sidebar = () => {
           ))}
         </ul>
       </Card>
-      <Card className="border-none mt-2 column-height bg-spotify-dark p-4">
-        <div className="sticky top-0 bg-spotify-dark z-10">
+      <Card className="border-none flex flex-col mt-2 column-height bg-spotify-dark p-4">
+        <div className="bg-spotify-dark shrink-0">
           <div className="mt-3 flex justify-between items-center">
             <Link
               href={"#"}
@@ -65,7 +65,7 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <div className="mt-5">
+        <div className="mt-5 grow shrink min-h-0 overflow-auto">
           <div className="flex text-sm justify-between items-center text-spotify-playback">
             <Search />
             <Link href={"#"} className="flex items-center">
@@ -74,7 +74,7 @@ const Sidebar = () => {
             </Link>
           </div>
           <ul className="mt-6">
-            {playlists.slice(0, 9).map((playlist, index) => (
+            {playlists.map((playlist, index) => (
               <li key={index} className="mb-4">
                 <SmallPlayListCard
                   title={playlist.title}

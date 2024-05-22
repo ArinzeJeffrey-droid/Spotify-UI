@@ -5,9 +5,9 @@ import Sidebar from "@/components/Sidebar";
 
 export default function Home() {
   return (
-    <main className="flex flex-col px-2">
+    <main className="flex h-screen gap-2">
+      <Sidebar />
       <div className="page-wrapper">
-        <Sidebar />
         <section className="pt-2">
           <Card className="h-10 bg-spotify-dark border-none"></Card>
         </section>
@@ -15,6 +15,7 @@ export default function Home() {
           <Card className="h-10 bg-spotify-dark border-none"></Card>
         </section>
       </div>
+
       <Playback className="w-full fixed bottom-0 left-0" />
     </main>
   );
