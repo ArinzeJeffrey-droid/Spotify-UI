@@ -4,8 +4,9 @@ const spotify = {
   dark: "#121212",
   gray: "#181818",
   "light-gray": "#343434",
+  "lightest-gray": "#282828",
   "text-subdued": "#a7a7a7",
-  "playback": "#BCBABB",
+  playback: "#BCBABB",
 };
 
 module.exports = spotify;

@@ -21,7 +21,7 @@ export type Props = React.PropsWithChildren<
 const BUTTON_CLASSES = {
   base: "inline-flex justify-center items-center",
   badge:
-    "bg-spotify-light-gray hover:opacity-75 text-white active:bg-white active:text-black rounded-2xl px-3 py-1",
+    "bg-spotify-lightest-gray text-sm hover:opacity-75 text-white active:bg-white active:text-black rounded-2xl px-3 py-1",
   green: "bg-spotify-green text-black p-3 rounded-full shadow-2xl",
 };
 function Button({ variant = "base", ...props }: Props): React.ReactElement {
