@@ -3,6 +3,10 @@
   @apply grid gap-2 flex-1 overflow-y-auto;
 }
 
-.column-height {
-  height: calc(100% - 100px);
+.adjusted-column-height {
+  height: calc(100% - 200px);
+}
+
+.viewport-height-minus-padding {
+  height: calc(100vh - 100px);
 }

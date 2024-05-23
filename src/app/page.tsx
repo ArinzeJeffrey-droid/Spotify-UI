@@ -12,7 +12,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="p-4 flex flex-col h-[1000px]"> {/** TODO: Fix scroll */}
+    <div className="p-4 flex flex-col viewport-height-minus-padding">
       <div className="bg-spotify-dark mb-5 shrink-0">
         <div className="flex justify-between mb-5">
           <div>
@@ -41,7 +41,6 @@ export default function Home() {
       </div>
 
       <div className="grow shrink min-h-0 overflow-auto">
-
         <ul className="grid grid-cols-3 gap-x-2 mb-10">
           {playlists.slice(0, 9).map((playlist, index) => (
             <li key={index} className="mb-1">
@@ -103,7 +102,7 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className="mb-10">
+        <div>
           <div className="flex justify-between">
             <Link href={"#"} className="text-lg text-white hover:underline">
               Episodes For you

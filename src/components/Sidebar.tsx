@@ -43,7 +43,7 @@ const Sidebar = () => {
           ))}
         </ul>
       </Card>
-      <Card className="border-none flex flex-col mt-2 column-height bg-spotify-dark p-4">
+      <Card className="border-none flex flex-col mt-2 adjusted-column-height  bg-spotify-dark p-4">
         <div className="bg-spotify-dark shrink-0">
           <div className="mt-3 flex justify-between items-center">
             <Link
@@ -75,7 +75,7 @@ const Sidebar = () => {
           </div>
           <ul className="mt-6">
             {playlists.map((playlist, index) => (
-              <li key={index} className="mb-4">
+              <li key={index} className="mb-4 last:mb-7">
                 <SmallPlayListCard
                   title={playlist.title}
                   subtitle={playlist.subtitle}
