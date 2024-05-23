@@ -26,11 +26,11 @@ const PlayListCard = ({ title, subtitle, imgSrc }: Props) => {
             variant="green"
             className="absolute bottom-2 hidden right-2 group-hover:block"
           >
-            <PlayIcon className="text-black" />
+            <PlayIcon fill="black" />
           </Button>
         </div>
       </CardContent>
-      <CardFooter className="flex-col px-3 text-white">
+      <CardFooter className="flex-col items-start px-3 text-white">
         <div>
           <p className="font-semibold">{title}</p>
           <p className="text-spotify-text-subdued text-sm">{subtitle}</p>
