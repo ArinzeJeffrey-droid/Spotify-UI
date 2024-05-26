@@ -7,7 +7,7 @@ import { playlists } from "@/mockData";
 
 const QueueSection = () => {
   return (
-    <section className="pt-2 mr-2">
+    <section className="pt-2 mr-2 hidden xl:block">
       <Card className="bg-spotify-dark border-none">
         <div className="p-4 flex flex-col viewport-height-minus-padding">
           <div className="shrink-0 flex justify-between mb-7 items-center">

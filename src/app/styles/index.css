@@ -1,6 +1,12 @@
 .page-wrapper {
-  grid-template-columns: 2fr 0.7fr;
+  grid-template-columns: 1fr;
   @apply grid gap-2 flex-1 overflow-y-auto;
+}
+
+@media (min-width: 1280px) {
+  .page-wrapper {
+    grid-template-columns: 2fr 0.7fr;
+  }
 }
 
 .adjusted-column-height {

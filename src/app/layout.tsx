@@ -23,16 +23,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={clsx(inter.className, "bg-black overflow-hidden")}>
-        <main className="flex h-screen gap-2">
-          <Sidebar />
-          <div className="page-wrapper">
-            <section className="pt-2 h-full overflow-hidden">
-              <Card className="bg-spotify-dark border-none">{children}</Card>
-            </section>
-            <QueueSection />
+        <main className="hidden lg:block">
+          <div className="flex h-screen gap-2">
+            <Sidebar />
+            <div className="page-wrapper">
+              <section className="pt-2 h-full overflow-hidden">
+                <Card className="bg-spotify-dark border-none">{children}</Card>
+              </section>
+              <QueueSection />
+            </div>
           </div>
+          <Playback className="w-full fixed bottom-0 left-0" />
         </main>
-        <Playback className="w-full fixed bottom-0 left-0" />
+        <div className="flex md:hidden h-screen justify-center items-center text-white text-center p-4">
+          <p>
+            Please view this app on a laptop or desktop for the best experience.
+          </p>
+        </div>
       </body>
     </html>
   );
