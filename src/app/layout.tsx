@@ -6,6 +6,7 @@ import Playback from "@/components/Playback/Playback";
 import Sidebar from "@/components/Sidebar";
 import "./globals.css";
 import "./styles/index.css";
+import QueueSection from "@/components/QueueSection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,13 +27,9 @@ export default function RootLayout({
           <Sidebar />
           <div className="page-wrapper">
             <section className="pt-2 h-full overflow-hidden">
-              <Card className="bg-spotify-dark border-none">
-                {children}
-              </Card>
+              <Card className="bg-spotify-dark border-none">{children}</Card>
             </section>
-            <section className="pt-2">
-              <Card className="h-10 bg-spotify-dark border-none"></Card>
-            </section>
+            <QueueSection />
           </div>
         </main>
         <Playback className="w-full fixed bottom-0 left-0" />
