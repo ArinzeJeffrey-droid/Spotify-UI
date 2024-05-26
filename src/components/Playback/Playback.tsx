@@ -2,7 +2,7 @@ import React from "react";
 import SmallPlayListCard from "../SmallPlayListCard";
 import PlaybackProgressBar from "./PlaybackProgressBar";
 import PlaybackControls from "./PlaybackControls";
-import MediaControls from "./MediaControls";
+import MediaControls from "./MediaControls/MediaControls";
 import clsx from "clsx";
 
 type Props = {
