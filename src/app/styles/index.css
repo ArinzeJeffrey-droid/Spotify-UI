@@ -5,7 +5,7 @@
 
 @media (min-width: 1280px) {
   .page-wrapper {
-    grid-template-columns: 2fr 0.7fr;
+    grid-template-columns: 2fr 0.5fr;
   }
 }
 
